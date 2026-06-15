@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+
+header{
+    color: white;
+    width: 100%;
+    height: 250px;
+    margin-top: 60px;
+    background-image: linear-gradient(to right, #6d1a2a, #6d1a2acc);
+    font-size: 14px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 60px;   
+    background-color: black;    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerNav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+nav span{
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+
+nav span img{
+    width: 20px;
+}
+
+nav h1{
+    font-size: 20px;
+}
+
+#ofertas{
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 10px;
+  
+}
+#ofertas a{
+    text-decoration: none;
+    color: #6d1a2a;
+}
+
+.icon{
+    background-color: transparent;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.icon:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
