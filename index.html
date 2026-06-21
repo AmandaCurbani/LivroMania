@@ -13,9 +13,33 @@
 
 </head>
 <body>
+    
+    <!-- MENU LATERAL -->
+     <aside>
+        <nav class="menulateral">
+            <img src="icon/livro.png">
+            <h3>Gêneros Literários</h3>
+            <ul>
+                <li><a href="gêneros literários/aventura.html">Aventura</a></li>
+                <li><a href="gêneros literários/ficcao.html">Ficção</a></li>
+                <li><a href="gêneros literários/juvenil.html">Infanto Juvenil</a></li>
+                <li><a href="gêneros literários/romance.htm">Romance</a></li>
+                <li><a href="gêneros literários/suspense.html">Suspense</a></li>
+                <li><a href="gêneros literários/terror.html">Terror</a></li>
+            </ul>
+        </nav>
+     </aside>
+
+    <!-- CABEÇALHO -->
     <header>
         <nav>
             <div class="containerNav">
+                <div class="menu">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <img src="icon/menu.jpeg">
+                    </label>
+                </div>
                 <h1>LivroMania</h1>
 
                 <span>
@@ -27,12 +51,14 @@
             
 
         </nav>
+        <div class="containerheader">
         <h2>Bem-vindo à LivroMania</h2> 
             
             <!-- ideia de deixar ele trocando o nome, por exemplo Bem-vindo a melhor livraria online/ ao acervo de livros... (efeito de digita e apaga) -->
 
         <p>Descubra seu próximo livro favorito com descontos imperdíveis!</p>
         <button id="ofertas"><a href="#">Ver ofertas</a></button>
+        </div>
     </header>
 
     <h3 class="titulo">Lançamentos</h3>
@@ -110,5 +136,7 @@
     <section class="maisVendidos">
         <!-- Fazer um carrossel -->
     </section>
+
+
 </body>
 </html>
