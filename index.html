@@ -13,34 +13,26 @@
 
 </head>
 <body>
-    
-    <!-- MENU LATERAL -->
-     <aside>
-        <nav class="menulateral">
-            <img src="icon/livro.png">
-            <h3>Gêneros Literários</h3>
-            <ul>
-                <li><a href="gêneros literários/aventura.html">Aventura</a></li>
-                <li><a href="gêneros literários/ficcao.html">Ficção</a></li>
-                <li><a href="gêneros literários/juvenil.html">Infanto Juvenil</a></li>
-                <li><a href="gêneros literários/romance.htm">Romance</a></li>
-                <li><a href="gêneros literários/suspense.html">Suspense</a></li>
-                <li><a href="gêneros literários/terror.html">Terror</a></li>
-            </ul>
-        </nav>
-     </aside>
 
     <!-- CABEÇALHO -->
     <header>
         <nav>
-            <div class="containerNav">
-                <div class="menu">
+            <div class="menu">
                     <input type="checkbox" id="check">
                     <label for="check">
-                        <img src="icon/menu.jpeg">
+                        <img src="icon/menu.png">
                     </label>
                 </div>
+
+            <div class="containerNav">
                 <h1>LivroMania</h1>
+
+                <div id="links">
+                    <a href="#">Laçamentos</a>
+                    <a href="#">Mais Vendidos</a>
+                    <a href="#">Cadastro</a>
+                    <a href="#">Fale Conosco</a>
+                </div>
 
                 <span>
                     <button class="icon"><img src="icon/lupa.png"></button>
@@ -48,95 +40,113 @@
                     <button class="icon"><img src="icon/carrinho.png"></button>
                 </span>
             </div>
-            
 
         </nav>
-        <div class="containerheader">
-        <h2>Bem-vindo à LivroMania</h2> 
-            
-            <!-- ideia de deixar ele trocando o nome, por exemplo Bem-vindo a melhor livraria online/ ao acervo de livros... (efeito de digita e apaga) -->
+        <div class="containerHeader">
+            <h2>Bem-vindo à LivroMania</h2> 
+                
+                <!-- ideia de deixar ele trocando o nome, por exemplo Bem-vindo a melhor livraria online/ ao acervo de livros... (efeito de digita e apaga) -->
 
-        <p>Descubra seu próximo livro favorito com descontos imperdíveis!</p>
-        <button id="ofertas"><a href="#">Ver ofertas</a></button>
+            <p>Descubra seu próximo livro favorito com descontos imperdíveis!</p>
+            <button id="ofertas"><a href="#">Ver ofertas</a></button>
         </div>
     </header>
 
-    <h3 class="titulo">Lançamentos</h3>
+    <!-- MENU LATERAL -->
+     <aside>
+        <nav class="menulateral">
+            <span><img src="icon/livro.png">
+            <h3>Gêneros Literários</h3>
+            </span>
+            <ul>
+                <li><a href="generosLiterarios/aventura.html">Aventura</a></li>
+                <li><a href="generosLiterarios/ficcao.html">Ficção</a></li>
+                <li><a href="generosLiterarios/juvenil.html">Infanto Juvenil</a></li>
+                <li><a href="generosLiterarios/romance.html">Romance</a></li>
+                <li><a href="generosLiterarios/suspense.html">Suspense</a></li>
+                <li><a href="generosLiterarios/terror.html">Terror</a></li>
+            </ul>
+        </nav>
+     </aside>
+    
+    <div class="containerMain">
 
-    <section class="lancamentos">
-        <span class="livros">
-            <img class="capa" src="capas/capa1.jpg">
-            <div>
+            <h3 class="titulo">Lançamentos</h3>
 
-                <h4>Amores improváveis vol. 1</h4>
-                <p>Marina Silva</p>
+            <section class="lancamentos">
+                <span class="livros">
+                    <img class="capa" src="capas/capa1.jpg">
+                    <div>
 
-                <section class="containerInfo">
-                    <p>R$ 45,90</p>
-                    <p class="preco">R$ 59,99</p>
-                    <p>-23%</p>
-                </section>
-                
+                        <h4>Amores improváveis vol. 1</h4>
+                        <p>Marina Silva</p>
 
-                <span class="addCarrinho">
-                    <img src="icon/carrinho.png">
-                    <button><a href="#">Adicionar ao carrinho</a></button>
+                        <section class="containerInfo">
+                            <p>R$ 45,90</p>
+                            <p class="preco">R$ 59,99</p>
+                            <p>-23%</p>
+                        </section>
+                        
+
+                        <span class="addCarrinho">
+                            <img src="icon/carrinho.png">
+                            <button><a href="#">Adicionar ao carrinho</a></button>
+                        </span>
+                        
+                    </div>
                 </span>
-                
-            </div>
-        </span>
 
-
-        <span class="livros">
-            <img class="capa" src="capas/capa1.jpg">
-            <div>
-
-                <h4>Amores improváveis vol. 1</h4>
-                <p>Marina Silva</p>
-
-                <section class="containerInfo">
-                    <p>R$ 45,90</p>
-                    <p class="preco">R$ 59,99</p>
-                    <p>-23%</p>
-                </section>
-                
-
-                <span class="addCarrinho">
-                    <img src="icon/carrinho.png">
-                    <button><a href="#">Adicionar ao carrinho</a></button>
-                </span>
-                
-            </div>
-        </span>
 
                 <span class="livros">
-            <img class="capa" src="capas/capa1.jpg">
-            <div>
+                    <img class="capa" src="capas/capa1.jpg">
+                    <div>
 
-                <h4>Amores improváveis vol. 1</h4>
-                <p>Marina Silva</p>
+                        <h4>Amores improváveis vol. 1</h4>
+                        <p>Marina Silva</p>
 
-                <section class="containerInfo">
-                    <p>R$ 45,90</p>
-                    <p class="preco">R$ 59,99</p>
-                    <p>-23%</p>
-                </section>
-                
+                        <section class="containerInfo">
+                            <p>R$ 45,90</p>
+                            <p class="preco">R$ 59,99</p>
+                            <p>-23%</p>
+                        </section>
+                        
 
-                <span class="addCarrinho">
-                    <img src="icon/carrinho.png">
-                    <button><a href="#">Adicionar ao carrinho</a></button>
+                        <span class="addCarrinho">
+                            <img src="icon/carrinho.png">
+                            <button><a href="#">Adicionar ao carrinho</a></button>
+                        </span>
+                        
+                    </div>
+                </span>
+
+                        <span class="livros">
+                    <img class="capa" src="capas/capa1.jpg">
+                    <div>
+
+                        <h4>Amores improváveis vol. 1</h4>
+                        <p>Marina Silva</p>
+
+                        <section class="containerInfo">
+                            <p>R$ 45,90</p>
+                            <p class="preco">R$ 59,99</p>
+                            <p>-23%</p>
+                        </section>
+                        
+
+                        <span class="addCarrinho">
+                            <img src="icon/carrinho.png">
+                            <button><a href="#">Adicionar ao carrinho</a></button>
+                        </span>
+                        
+                    </div>
                 </span>
                 
-            </div>
-        </span>
-        
-    </section>
+            </section>
 
-    <section class="maisVendidos">
-        <!-- Fazer um carrossel -->
-    </section>
+            <section class="maisVendidos">
+                <!-- Fazer um carrossel --></section>
 
+            </section>
 
 </body>
 </html>
