@@ -113,6 +113,9 @@ nav h1{
     margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:space-around;
+    
+    overflow: auto;
     
 }
 .titulo{
@@ -128,7 +131,7 @@ nav h1{
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.095);
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    margin-right: 50px;
+    margin-right: 25px;
     margin-bottom: 50px;
 }
 
@@ -321,6 +324,29 @@ input[type="checkbox"]{
     }
     .lancamentos{
         width: 80%;
+        flex-wrap: nowrap;
+        overflow:auto;
+
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+    .livros div{
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+    .livros div h4{
+        font-size: 12px;
+    }
+    .livros div p{
+        font-size: 10px;
+    }
+    .livros div .containerInfo p {
+        font-size: 10px;
+    }
+    .livros div .addCarrinho,a{
+        height: 30px;
+        font-size: 10px;
     }
     .titulo{
         margin-left: 10%;
