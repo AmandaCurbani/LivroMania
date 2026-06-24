@@ -11,7 +11,7 @@ header{
     width: 100%;
     height: 250px;
     margin-top: 60px;
-    background-image: linear-gradient(to right, #6d1a2a, #6d1a2acc);
+    background-image: linear-gradient(to right, #261a6d, #ea1dc8cc);
     font-size: 13px;
     position: relative;
     overflow: auto;
@@ -92,18 +92,30 @@ nav h1{
     margin-left: 30px;
     padding: 5px;
     box-sizing: border-box;
+    color: white;
+    text-decoration: none;
 }
 
 #links a:hover{
     background: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+}
+.menu{
+    display: none;
+}
+.containerHeader{
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* LANÇAMENTOS */
 
 .containerMain{
     display: flex;
-    width: 80%;
-    margin-left: 20%;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -214,154 +226,8 @@ div h4{
     font-size: small;
 }
 
-/* MENU LATERAL */
-
-aside{
-    left: 0;
-    z-index: 0;
-    position: fixed;
-    width: 33%;
-}
-.menulateral ul li a{
-    color: black;
-    margin: 10px 5px 5px 15px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    display: block;
-    padding: 5px;
-    box-sizing: border-box;
-}
-.menulateral ul li a:hover{
-    background:linear-gradient(to right, rgba(73, 15, 26, 0.2), rgba(73, 15, 26, 0.2), rgba(73, 15, 26, 0));
-}
-.menulateral ul{
-    list-style: none;
-    padding: 10px 0;
-    margin: 0 15px 0 20px;
-}
-.menulateral{
-    padding: 0;
-    background-color: white;
-    width: 20%;
-    height: 100%;
-    display: flex;
-    box-sizing: border-box;
-    overflow: auto;
-    justify-content: right;
-    align-items: start;
-    flex-direction: column;
-
-    position: fixed;
-    top: 60px;
-    
-    box-shadow: 2px 0 10px rgba(96, 23, 23, 0.112);
-}
-.containerHeader{
-    margin-left: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.menulateral h3{
-    display: inline-block;
-    margin-left: 10px;
-    margin-bottom: 0;
-}
-.menulateral span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.menulateral img{
-    width: 30px;
-    height: auto;
-    margin-left: 30px;
-}
-.menu{
-    display: none;
-}
-
-.menu img{
-    width: 20px;
-    margin-right: 20px;
-}
-input[type="checkbox"]{
-    display:none;
-}
-
-/* CONTATO */
-.contato{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.secContato{
-    display: flex;
-    flex-direction: row;
-}
-
-.mensagem, .infoContato{
-    margin: 2% 10%;
-    display: inline-block;
-    display: flex;
-    width: 50%;
-    box-shadow: 0px 0 10px rgba(96, 23, 23, 0.2);
-    border-radius: 10px;
-    
-}
-
-.mensagem{
-    width: 100%;
-    background-color: #ffffff;
-    display: inline-block;
-    padding: 0 5%;
-    box-sizing: border-box;
-}
-form input, textarea{
-    width: 100%;
-    background-color: rgb(255, 246, 239);
-    border: 1px solid #490F1A;
-    border-radius: 5px;
-    margin:5px 0;
-    margin-bottom: 10px;
-}
-
-form label{
-    font-size: 12px;
-    color: #490F1A;
-}
 
 
-
-/* Menu Lateral Responsive
-
-@media (max-width:768px){
-    body{
-        padding-left: 0;
-    }
-    .logo{
-    width: 15%;
-    height: 20px;
-    margin: 10px 0 0 0;
-
-    }
-
-    .menu img{
-    display: inline-block;
-    width:  40px;
-   
-    }
-    input[type="checkbox"]{
-    display: none;
-}
-}*/
-
-/* ---RESPONSIVIDADE HEADER--- */
-
-/* < 1024px */
 @media screen and (max-width:1024px){
     #links a{
         display: none;
@@ -371,9 +237,6 @@ form label{
         display: none;
     }
 
-    .menu{
-        display: inline-block;
-    }
 
     .containerMain{
         width: 100%;
@@ -420,7 +283,7 @@ form label{
         margin-right: 5px;
     }
 
-    .livros div .addCarrinho,a{
+    .livros div .addCarrinho, .linkCompra{
         height: 30px;
         font-size: 9px;
     }
