@@ -4,7 +4,6 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 10px;
-    
 }
 
 header{
@@ -12,12 +11,11 @@ header{
     width: 100%;
     height: 250px;
     margin-top: 60px;
-    background-image: linear-gradient(to right, #261a6d, #ea1dc8cc);
+    background-image: linear-gradient(to right, #6d1a2a, #6d1a2acc);
     font-size: 13px;
     position: relative;
     overflow: auto;
 }
-
 header{
     display: flex;
     flex-direction: column;
@@ -93,30 +91,138 @@ nav h1{
     margin-left: 30px;
     padding: 5px;
     box-sizing: border-box;
-    color: white;
-    text-decoration: none;
 }
 
 #links a:hover{
     background: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
 }
-.menu{
-    display: none;
-}
-.containerHeader{
-    margin-left: 20%;
+
+/* LANÇAMENTOS */
+
+.containerMain{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
-a{
+
+.secLivros{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content:space-around;
+    
+    
+    overflow: auto;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    
+}
+.titulo{
+    font-size: 15px;
+    margin-left: 5%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+
+.livros{
+    background-color: #ffffff;
+    width: 200px;
+    height: auto;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.095);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-right: 25px;
+}
+
+.addCarrinho{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6d1a2a;
+    border-radius: 10px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.addCarrinho img{
+    width: 20px;
+}
+.addCarrinho button,a{
     background-color: transparent;
     color: white;
     text-decoration: none;
     border: 0px;
 }
+.livros div{
+    background-color:#ffffff;
+    position: relative;
+    padding: 0 15px;
+    box-sizing: border-box;
+    color: #6d1a2a;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+div h4{
+    color: #000000;
+    font-size: 15px;
+    margin: 5px 0 0 0;
+    font-weight: 500;
+}
+
+.containerInfo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.containerInfo p{
+    margin: 0 3px;
+}
+
+.capa{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.livros:hover{
+    border: #490F1A 1px solid;
+}
+
+.containerInfo p:first-child{
+    color: #000000;
+    font-weight:bold;
+    font-size: 15px;
+}
+.containerInfo .preco{
+    font-size: small;
+    text-decoration: line-through;
+}
+.containerInfo p:last-child{
+    color: #ffffff;
+    background-color: #490F1A;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: small;
+}
+.containerSec{
+    background-color: #ffffff;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+.maisVendidos{
+    background-color: rgb(255, 246, 239);
+}
+
 /* MENU LATERAL */
 
 aside{
@@ -193,130 +299,111 @@ input[type="checkbox"]{
     display:none;
 }
 
-/* LANÇAMENTOS */
-
-.containerMain{
+/* CONTATO */
+.contato{
+    background-color: rgb(255, 246, 239);
     display: flex;
-    margin-left: 20%;
-    width: 80%;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+    justify-items: center;
+
+}
+.secContato{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mensagem, .infoContato{
+    margin: 2% 2%;
+    display: flex;
+    box-shadow: 0px 0 10px rgba(96, 23, 23, 0.2);
+    border-radius: 10px;
+    padding: 0 20px;
+    
+}
+
+.mensagem{
+    background-color: #ffffff;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 45%;
+}
+form input, textarea{
+    width: 100%;
+    background-color: #FAF0F2;
+    border: 1px solid #490f1a36;
+    border-radius: 5px;
+    margin:5px 0;
+    margin-bottom: 10px;
+    resize: none
+}
+
+form label{
+    font-size: 12px;
+    color: #490F1A;
+}
+
+.infoContato{
+    background-color: #ffffff;
+    width: 25%;
     flex-direction: column;
 }
-
-.secLivros{
-    width: 90%;
-    height: 100%;
+.infoContato img{
+    float: left;
+    height: 14px;
+    margin: 5px;
+}
+.infoContato h4{
+    font-size: 12px;
+    margin: 0;
+}
+.infoContato div{
     display: flex;
-    margin: auto;
-    padding: 20px;
-    border-radius: 20px;
-    flex-direction: row;
-    justify-content:space-around;
-    
-    overflow: auto;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    
+    flex-direction: column;
+    margin: 5px 0;
 }
-.titulo{
-    font-size: 15px;
-    margin-left: 5%;
-    padding: 20px 0;
-    box-sizing: border-box;
-}
-
-
-.livros{
-    width: 200px;
-    height: auto;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.095);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    margin-right: 25px;
-}
-
-.addCarrinho{
-    margin: auto;
-    width: 100%;
+.infoContato span{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #6d1a2a;
-    border-radius: 10px;
-    padding: 10px 5px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
 }
-.addCarrinho img{
-    width: 20px;
-}
-.addCarrinho button, .addCarrinho a{
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    border: 0px;
-}
-.livros div{
-    background-color: rgb(255, 246, 239);
-    position: relative;
-    padding: 0 15px;
-    box-sizing: border-box;
+.infoContato p{
     color: #6d1a2a;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-div h4{
-    color: #000000;
-    font-size: 15px;
-    margin: 5px 0 0 0;
-    font-weight: 500;
-}
-
-.containerInfo{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-
-}
-
-.containerInfo p{
-    margin: 0 3px;
-}
-
-.capa{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.livros:hover{
-    border: #490F1A 1px solid;
-}
-
-.containerInfo p:first-child{
-    color: #000000;
-    font-weight:bold;
-    font-size: 15px;
-}
-.containerInfo .preco{
-    font-size: small;
-    text-decoration: line-through;
-}
-.containerInfo p:last-child{
-    color: #ffffff;
-    background-color: #490F1A;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: small;
-}
-
-.linkLivro{
-    width: 100%;
-    border: 0;
+    margin: 3px;
 }
 
 
+/* Menu Lateral Responsive
 
+@media (max-width:768px){
+    body{
+        padding-left: 0;
+    }
+    .logo{
+    width: 15%;
+    height: 20px;
+    margin: 10px 0 0 0;
+
+    }
+
+    .menu img{
+    display: inline-block;
+    width:  40px;
+   
+    }
+    input[type="checkbox"]{
+    display: none;
+}
+}*/
+
+/* ---RESPONSIVIDADE HEADER--- */
+
+/* < 1024px */
 @media screen and (max-width:1024px){
     #links a{
         display: none;
@@ -326,6 +413,9 @@ div h4{
         display: none;
     }
 
+    .menu{
+        display: inline-block;
+    }
 
     .containerMain{
         width: 100%;
@@ -372,7 +462,7 @@ div h4{
         margin-right: 5px;
     }
 
-    .livros div .addCarrinho, .linkCompra{
+    .livros div .addCarrinho,a{
         height: 30px;
         font-size: 9px;
     }

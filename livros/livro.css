@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 246, 239);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 60px;   
+    background-color: black;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.containerNav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav span img{
+    width: 20px;
+}
+
+nav h1{
+    font-size: 20px;
+}
+
+.icon{
+    background-color: transparent;
+    border: 0px;
+    padding: 2px 10px;
+}
+.icon:hover{
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+}
+
+.menu{
+    display: none;
+}
+
+a{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 0px;
+}
+
+/* COMPRA */
+section{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.compra{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding-bottom: 40px;
+
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.compra img{
+    width: 50%;
+    margin: 50px 0;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
+
+    transition: all 0.5s;
+}
+.compra img:hover{
+    transform: scale(1.05);
+}
+
+.compra span, #sinopse span{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.compra,.info{
+    margin: 20px 0;
+}
+
+.info{
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #ffffff;
+
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#descricao{
+    display: flex;
+    width: 300px;
+}
+
+#descricao p{
+    background-color: #6d1a2a;
+    color: #ffffff;
+    font-style: italic;
+    padding: 2px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.info img{
+    width: 70px;
+    margin: 4px 0;
+}
+
+.containerInfo{
+    display: flex;
+    align-items: center;
+}
+
+.containerInfo p:last-child{
+    color: #ffffff;
+    background-color: #490F1A;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
+    margin-left: 2px;
+}
+
+.containerInfo p:first-child{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.preco{
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.compra button, button , #sinopse button, button a{
+    background-color: #6d1a2a;
+    color: white;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 10px;
+    margin: 5px 0;
+    height: 30px;
+}
+
+#sinopse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sinopse p{
+    width: 90%;
+    text-align: justify;
+}
+#sinopse span{
+    display: none;
+}
+
+h3{
+    font-size: 15px;
+}
+
+p{
+    font-size: 13px;
+}
+#contraCapa{
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    .menulateral{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .compra{
+        flex-direction: row;
+        width: 90%;
+        justify-content:center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #contraCapa{
+        display: inline-block;
+    }
+    .compra span{
+        display: none;
+    }
+    .compra img{
+        width: 200px;
+        margin: 0 10px 10px;
+    }
+    .info{
+        width: 90%;
+    }
+    
+    #sinopse span{
+    display:flex;
+}
+}
+
+@media screen and (max-width:500px) {
+    .compra img{
+        width: 150px;
+    }
+    
+}
