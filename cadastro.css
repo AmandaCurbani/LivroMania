@@ -1,48 +1,50 @@
 body{
-    background-color: bisque;
+    background-color: rgb(255, 246, 239);
     font-family: "Poppins", sans-serif;
     font-size: medium;
-    margin-top: 30px;
+    margin: 0;
     
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 12px;
 
 }
 form{
-    background-color: aqua;
-    margin-top: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .formulario{
-    background-color: green;
-    width: 50%;
+    margin: 20px 0;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .formulario p{
-    background-color: aliceblue;
     text-align: center;
     margin-bottom: 10px;
 }
 .formulario h2{
-    background-color: rgb(255, 153, 0);
     text-align: center;
 }
 .formulario input{
     display: inline-block;
-    border: 4px solid red;
     border-radius: 5px;
     margin: 3px 10px;
 
 }
 .formulario label{
-    background-color: yellow;
     margin: 2px 10px;
     font-weight: bold;
     display: inline-block;
 }
 .formulario #envio #conta{
-    background-color: rgb(143, 114, 77);
-    /* display: flex;
-    justify-content: center; */
     padding: 5px;
     box-sizing: border-box;
     width: 100%;
@@ -56,10 +58,19 @@ form{
 
 .formulario .aceito{
     margin-top: 10px;
-    background-color: brown;
-    font-size: small;
+    font-size: 12px;
+    font-weight: 400;
 }
 .formulario .conta{
-    background-color: chocolate;
     margin: 0 0 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
+.conta input{
+    width: 10px;
+}
+#conta{
+    background-color:#6d1a2a;
+    color: #fff;
+    border: 0;
 }
