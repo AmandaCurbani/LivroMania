@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
 body{
     margin: 0;
     background-color: rgb(255, 246, 239);
@@ -128,7 +132,7 @@ aside{
 .menulateral ul li a{
     color: black;
     margin: 10px 5px 5px 15px;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 20px;
     display: block;
     padding: 5px;
@@ -137,7 +141,9 @@ aside{
 .menulateral ul li a:hover{
     background:linear-gradient(to right, rgba(73, 15, 26, 0.2), rgba(73, 15, 26, 0.2), rgba(73, 15, 26, 0));
 }
+
 .menulateral ul{
+    width: 100%;
     list-style: none;
     padding: 10px 0;
     margin: 0 15px 0 20px;
@@ -168,18 +174,19 @@ aside{
 }
 .menulateral h3{
     display: inline-block;
-    margin-left: 10px;
-    margin-bottom: 0;
+    margin: 0;
+    margin: 0px 0px 0px 10px;
 }
 .menulateral span{
+    margin-top: 10px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .menulateral img{
-    width: 30px;
+    width: 25px;
     height: auto;
-    margin-left: 30px;
 }
 .menu{
     display: none;
@@ -211,6 +218,7 @@ input[type="checkbox"]{
     border-radius: 20px;
     flex-direction: row;
     justify-content:space-around;
+    background-color: rgb(255, 255, 255);
     
     overflow: auto;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
@@ -226,16 +234,19 @@ input[type="checkbox"]{
 
 
 .livros{
+    display: flex;
+    flex-direction: column;
+    
     width: 200px;
-    height: auto;
+    height: 100%;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.095);
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin-right: 25px;
+
 }
 
 .addCarrinho{
-    margin: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -250,6 +261,9 @@ input[type="checkbox"]{
     width: 20px;
 }
 .addCarrinho button, .addCarrinho a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
     background-color: transparent;
     color: white;
     text-decoration: none;
@@ -257,8 +271,11 @@ input[type="checkbox"]{
 }
 .livros div{
     background-color: rgb(255, 246, 239);
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
     padding: 0 15px;
+    width: 100%;
     box-sizing: border-box;
     color: #6d1a2a;
     border-bottom-left-radius: 20px;
@@ -273,18 +290,30 @@ div h4{
 
 .containerInfo{
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    flex-direction: column;
+    width: 100%;
 
+}
+.box{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.boxInfo{
+    height: 80px;
+    display: block;
 }
 
 .containerInfo p{
     margin: 0 3px;
+    white-space: nowrap;
 }
 
 .capa{
-    width: 100%;
-    height: auto;
+    display: block;
+    height: 300px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -307,12 +336,13 @@ div h4{
     background-color: #490F1A;
     border-radius: 5px;
     padding: 5px;
-    font-size: small;
+    font-size: 10px;
 }
 
 .linkLivro{
     width: 100%;
     border: 0;
+    margin: 0px;
 }
 
 
@@ -346,11 +376,13 @@ div h4{
     }
 
     .livros div{
-        width:160px;
-        height: 90px;
-        position: static;
+        width:100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
+    }
+    .box{
+        height: 10px;
     }
 
     .livros div h4{

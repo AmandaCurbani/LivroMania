@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 body{
     margin: 0;
     background-color: rgb(255, 246, 239);
@@ -85,12 +90,16 @@ nav h1{
 #links{
     display: flex;
     align-items: center;
+
+    scroll-behavior: smooth;
 }
 
 #links a{
     margin-left: 30px;
     padding: 5px;
     box-sizing: border-box;
+    color: white;
+    text-decoration: none;
 }
 
 #links a:hover{
@@ -114,12 +123,11 @@ nav h1{
     border-radius: 20px;
     flex-direction: row;
     justify-content:space-around;
-    
+    background-color: rgb(255, 246, 239);
     
     overflow: auto;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
     border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
     
 }
 .titulo{
@@ -131,17 +139,19 @@ nav h1{
 
 
 .livros{
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    
     width: 200px;
-    height: auto;
+    height: 100%;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.095);
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin-right: 25px;
+
 }
 
 .addCarrinho{
-    margin: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -155,16 +165,22 @@ nav h1{
 .addCarrinho img{
     width: 20px;
 }
-.addCarrinho button,a{
+.addCarrinho button, .addCarrinho a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
     background-color: transparent;
     color: white;
     text-decoration: none;
     border: 0px;
 }
 .livros div{
-    background-color:#ffffff;
-    position: relative;
+    background-color: rgb(255, 246, 239);
+    display: flex;
+    flex-direction: column;
+    height: 180px;
     padding: 0 15px;
+    width: 100%;
     box-sizing: border-box;
     color: #6d1a2a;
     border-bottom-left-radius: 20px;
@@ -179,17 +195,30 @@ div h4{
 
 .containerInfo{
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    flex-direction: column;
+    width: 100%;
 
+}
+.box{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.boxInfo{
+    height: 80px;
+    display: block;
 }
 
 .containerInfo p{
     margin: 0 3px;
+    white-space: nowrap;
 }
 
 .capa{
-    width: 100%;
+    display: block;
+    height: 300px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -212,7 +241,13 @@ div h4{
     background-color: #490F1A;
     border-radius: 5px;
     padding: 5px;
-    font-size: small;
+    font-size: 10px;
+}
+
+.linkLivro{
+    width: 100%;
+    border: 0;
+    margin: 0px;
 }
 .containerSec{
     background-color: #ffffff;
@@ -221,6 +256,12 @@ div h4{
 }
 .maisVendidos{
     background-color: rgb(255, 246, 239);
+}
+.maisVendidos .livros div{
+    background-color: #ffffff;
+}
+.lancamentos{
+    background-color: #ffffff;
 }
 
 /* MENU LATERAL */
@@ -318,11 +359,15 @@ input[type="checkbox"]{
     flex-direction: row;
     justify-content: center;
 }
+.secContato h3{
+    color: #490F1A;
+}
 
 .mensagem, .infoContato{
     margin: 2% 2%;
     display: flex;
-    box-shadow: 0px 0 10px rgba(96, 23, 23, 0.2);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.095);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 0 20px;
     
@@ -341,7 +386,14 @@ form input, textarea{
     border-radius: 5px;
     margin:5px 0;
     margin-bottom: 10px;
-    resize: none
+    resize: none;
+
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #6d1a2a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 form label{
@@ -362,19 +414,57 @@ form label{
 .infoContato h4{
     font-size: 12px;
     margin: 0;
+    color: #490F1A;
 }
 .infoContato div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 5px 0;
 }
-.infoContato span{
+.infoContato div span{
     display: flex;
     align-items: center;
 }
 .infoContato p{
     color: #6d1a2a;
     margin: 3px;
+}
+
+#enviar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+#enviar button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 7px 15%;
+    border: 0;
+    background-color: #6d1a2a;
+    color: #ffffff;
+    border-radius: 10px;
+}
+#enviar img{
+    width: 14px;
+    margin: 0px 10px;
+}
+
+.atendimento{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.atendimento span{
+    display: flex;
+    margin: 5px 0;
+    
 }
 
 
@@ -436,11 +526,15 @@ form label{
     }
 
     .livros div{
-        width:160px;
+        width:100%;
         height: 90px;
         position: static;
         display: flex;
         flex-direction: column;
+    }
+
+    .box{
+        height: 10px;
     }
 
     .livros div h4{
@@ -481,4 +575,16 @@ form label{
         display: none;
     }
 
+}
+
+@media screen and (max-width:768px) {
+        .secContato{
+        display: flex;
+        flex-direction: column;
+    }
+    .mensagem, .infoContato{
+        width: 100%;
+        margin: 10px 0 10px 0;
+        box-sizing: border-box;
+    }
 }
