@@ -336,9 +336,9 @@ aside{
     width: 20px;
     margin-right: 20px;
 }
-input[type="checkbox"]{
+/* input[type="checkbox"]{
     display:none;
-}
+} */
 
 /* CONTATO */
 .contato{
@@ -469,6 +469,7 @@ form label{
     
 }
 
+
 /* ---RESPONSIVIDADE--- */
 
 /* < 1024px */
@@ -553,6 +554,13 @@ form label{
         display: none;
     }
 
+    header{
+        display: none;
+    }
+    .containerMain #lanc{
+    margin-top: 60px;
+}
+
 }
 
 @media screen and (max-width:768px) {
@@ -564,5 +572,121 @@ form label{
         width: 100%;
         margin: 10px 0 10px 0;
         box-sizing: border-box;
+    }
+}
+
+/* MENU HAMBURGUER */
+
+#menuresp h1{
+    position: absolute;
+    z-index: 997;
+    display: flex;
+    left: 25%;
+    color: white;
+}
+
+#menuresp nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menumobile .menu-lines{
+    position:absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+
+    margin-left: 30px;
+}
+
+.menumobile .menu-lines span{
+    display:inline-block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #cdcdcd;
+    border-radius: 3px;
+    margin-left: 5px;
+    transition: all ease .2s;
+}
+.menumobile .menu-faketrigger{
+    display: inline-block;
+    position:absolute;
+    z-index: 1000;
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+    cursor: pointer;
+    margin-left: 30px;
+
+}
+
+.menumobile .menu-faketrigger:checked ~ .menu-lines span{
+    background-color: #6d1a2a;
+
+}
+.menumobile .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
+   
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+
+}
+.menumobile .menu-faketrigger:checked ~ .menu-lines span:nth-child(2){
+   
+    opacity: 0;
+}
+.menumobile .menu-faketrigger:checked ~ .menu-lines span:nth-child(3){
+   
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+
+}
+.menumobile ul{
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: 0;
+   
+    padding-top: 100px;
+    list-style: none;
+    background-color: white;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+
+    width: 40%;
+    margin-left: -46%;
+    transition: all ease .2s;
+
+}
+
+.menumobile .menu-faketrigger:checked ~ ul{
+    margin-left: 0;
+
+}
+
+.menumobile ul li{
+    padding: 10px;
+    display: inline-block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.303);
+    width: 60%;
+}
+.menumobile ul li a{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    transition: all ease .2s;
+}
+
+.menumobile ul li a:hover{
+    background:linear-gradient(to right, rgba(73, 15, 26, 0.2), rgba(73, 15, 26, 0.2), rgba(73, 15, 26, 0));
+}
+
+
+@media screen and (min-width: 1024px){
+    #menuresp{
+        display: none;
     }
 }

@@ -17,12 +17,12 @@
     <!-- CABEÇALHO -->
     <header>
         <nav>
-            <div class="menu">
-                    <input type="checkbox" id="check">
+            <!-- <div class="menu">
+                    
                     <label for="check">
                         <img src="icon/menu.png">
                     </label>
-                </div>
+                </div> -->
 
             <div class="containerNav">
                 <h1>LivroMania</h1>
@@ -398,16 +398,16 @@
 
                         <form method="post" action="url">
                             <label for="nome">Nome</label>
-                            <input type="text" name="nome" size="200">
+                            <input type="text" name="nome" size="200" required>
                             
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" size="200">
+                            <input type="email" name="email" size="200" required>
 
                             <label for="assunto">Assunto</label>
-                            <input type="text" name="assunto" size="200">
+                            <input type="text" name="assunto" size="200" required>
                             
                             <label for="mensagem">Mensagem</label>
-                            <textarea rows="10" cols="40" name="mensagem"></textarea>
+                            <textarea rows="10" cols="40" name="mensagem" required></textarea>
 
 
                         </form>
@@ -455,7 +455,7 @@
                             </span>
                             
                             <span>
-                                <h4>Sábado</h4>
+                                <h4>Sábado:</h4>
                                 <p>8h às 14h</p>
                             </span>
                             <span>
@@ -470,6 +470,28 @@
                     
                 </div>
             </section>
-            </form> 
+            </form>
+
+        <div id="menuresp">
+            
+            <nav class="menumobile">
+                <h1>Livro Mania</h1>
+                <input type= "checkbox" class="menu-faketrigger">
+                <div class="menu-lines">
+                    <span ></span>
+                    <span ></span>
+                    <span ></span>
+                </div>
+
+                <ul>
+                    <li><a href="generosLiterarios.html">Livros</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="#cont">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+           </nav> 
+        </div>   
+
+
 </body>
 </html>
