@@ -345,8 +345,6 @@ div h4{
     margin: 0px;
 }
 
-
-
 @media screen and (max-width:1024px){
     #links a{
         display: none;
@@ -480,7 +478,7 @@ div h4{
 }
 
 .menumobile .menu-faketrigger:checked ~ .menu-lines span{
-    background-color: #6d1a2a;
+    background-color: #440f1a;
 
 }
 .menumobile .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
@@ -512,8 +510,8 @@ div h4{
     box-sizing: border-box;
     margin: 0;
 
-    width: 40%;
-    margin-left: -46%;
+    width: 50%;
+    margin-left: -56%;
     transition: all ease .2s;
 
 }
@@ -541,8 +539,14 @@ div h4{
 .menumobile ul .menu-item{
     display: inline-block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.303);
-    width: 60%;
 
+    width: 60%;
+    margin-left: 20px;
+
+}
+.menumobile ul #gen{
+    border-top: 1px solid rgba(0, 0, 0, 0.303);
+    
 }
 
 
