@@ -19,13 +19,16 @@ form{
 .formulario{
     margin: 20px 0;
     background-color: rgb(255, 255, 255);
-    width: 60%;
+    width: 70%;
     padding: 20px;
     border-radius: 20px;
-
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.095);
     border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .formulario p{
     text-align: center;
     margin-bottom: 10px;
@@ -73,4 +76,24 @@ form{
     background-color:#6d1a2a;
     color: #fff;
     border: 0;
+}
+
+.voltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    color: #6d1a2a;
+    text-decoration: none;
+    width: 90px;
+    align-self: center;
+}
+
+.voltar img{
+    width: 20px;
+}
+
+.voltar:hover{
+    transform: scale(1.05);
 }

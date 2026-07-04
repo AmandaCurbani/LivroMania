@@ -43,6 +43,16 @@ nav{
     align-items: center;
     
 }
+
+.logo{
+    display: flex;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 .containerNav{
     width: 80%;
     display: flex;
@@ -137,9 +147,12 @@ aside{
     display: block;
     padding: 5px;
     box-sizing: border-box;
+    width: 80%;
 }
 .menulateral ul li a:hover{
     background:linear-gradient(to right, rgba(73, 15, 26, 0.2), rgba(73, 15, 26, 0.2), rgba(73, 15, 26, 0));
+    padding-left: 10px;
+    transition: 0.3s;
 }
 
 .menulateral ul{
@@ -554,4 +567,109 @@ div h4{
     #menuresp{
         display: none;
     }
+}
+
+/* --- RODAPÉ --- */
+
+footer{
+    background: #6d1a2a;
+    color: white;
+    padding:45px 60px 20px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col{
+    min-width: 220px;
+}
+
+.footer-col h2{
+    font-size: 25px;
+}
+
+.footer-col h3{
+    font-size: 14px;
+}
+
+.footer-col h2, .footer-col h3{
+    margin-bottom: 18px;
+}
+
+.footer-col p{
+    line-height: 1.7;
+    max-width: 280px;
+    font-size: 12px;
+}
+
+.footer-col ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li{
+    margin-bottom:14px;
+}
+
+.footer-col ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    font-size: 12px;
+}
+
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 5px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.social-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.social-icons img{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.social-icons a:hover{
+    transform: translateY(-4px);
+}
+
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,.15);
+    margin-top: 40px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media(max-width:768px){
+
+    footer{
+        padding:40px 25px 20px;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        gap:35px;
+    }
+
 }
