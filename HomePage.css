@@ -555,12 +555,13 @@ form label{
         display: none;
     }
 
-    header{
+    /*header{
         display: none;
-    }
+    }*/
+
     .containerMain #lanc{
     margin-top: 60px;
-}
+    }
 
 }
 
@@ -578,12 +579,16 @@ form label{
 
 /* MENU HAMBURGUER */
 
-#menuresp h1{
+#menuresp #logo{
     position: absolute;
     z-index: 997;
     display: flex;
-    left: 25%;
-    color: white;
+    left: 20%;
+}
+
+#menuresp #logo:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 #menuresp nav{

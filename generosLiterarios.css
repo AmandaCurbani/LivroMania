@@ -434,9 +434,10 @@ div h4{
         display: none;
     }
 
-    header{
+    /*header{
         display:none;
-    }
+    }*/
+
     .containerMain #fic{
     margin-top: 60px;
 } 
@@ -445,12 +446,16 @@ div h4{
 
 /* MENU HAMBURGUER */
 
-#menuresp h1{
+#menuresp #logo{
     position: absolute;
     z-index: 997;
     display: flex;
-    left: 25%;
-    color: white;
+    left: 20%;
+}
+
+#menuresp #logo:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 #menuresp nav{
