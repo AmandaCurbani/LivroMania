@@ -17,12 +17,6 @@
     <!-- CABEÇALHO -->
     <header>
         <nav>
-            <!-- <div class="menu">
-                    
-                    <label for="check">
-                        <img src="icon/menu.png">
-                    </label>
-                </div> -->
 
             <div class="containerNav">
                 <img src="icon/logo.png">
@@ -46,7 +40,7 @@
             <h2>Bem-vindo à LivroMania</h2> 
 
             <p>Descubra seu próximo livro favorito com descontos imperdíveis!</p>
-            <button id="ofertas"><a href="#">Ver ofertas</a></button>
+            <button id="ofertas"><a href="#lanc">Ver ofertas</a></button>
         </div>
     </header>
 
@@ -398,16 +392,16 @@
 
                         <form method="post" action="url">
                             <label for="nome">Nome</label>
-                            <input type="text" name="nome" size="200" required>
+                            <input type="text" name="nome" size="200" placeholder="Seu nome">
                             
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" size="200" required>
+                            <input type="email" name="email" size="200" required placeholder="user@email.com">
 
                             <label for="assunto">Assunto</label>
-                            <input type="text" name="assunto" size="200" required>
+                            <input type="text" name="assunto" size="200" required placeholder="Qual é o assunto?">
                             
                             <label for="mensagem">Mensagem</label>
-                            <textarea rows="10" cols="40" name="mensagem" required></textarea>
+                            <textarea rows="10" cols="40" name="mensagem" required placeholder="Escreva sua mensagem..."></textarea>
 
 
                         </form>
@@ -477,7 +471,7 @@
         <div id="menuresp">
             
             <nav class="menumobile">
-                <img src="icon/logo.png" id="logo">
+                <a href="HomePage.html" class="linkHome"><img src="icon/logo.png" id="logo"></a>
                 <input type= "checkbox" class="menu-faketrigger">
                 <div class="menu-lines">
                     <span ></span>

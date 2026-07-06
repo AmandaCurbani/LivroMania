@@ -76,7 +76,9 @@ nav h1{
 #ofertas a{
     text-decoration: none;
     color: #6d1a2a;
-
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
 }
 
 .icon{
@@ -351,6 +353,7 @@ aside{
     padding: 20px;
     box-sizing: border-box;
     justify-items: center;
+    margin-bottom: 60px;
 
 }
 .secContato{
@@ -445,7 +448,7 @@ form label{
 #enviar button{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    width: 300px;
+    width: 200px;
     padding: 7px 7px;
     border: 0;
     background-color: #6d1a2a;
@@ -471,117 +474,11 @@ form label{
 }
 
 
-/* ---RESPONSIVIDADE--- */
-
-/* < 1024px */
-@media screen and (max-width:1024px){
-    #links a{
-        display: none;
-    }
-
-    .menulateral{
-        display: none;
-    }
-
-    .menu{
-        display: inline-block;
-    }
-
-    .containerMain{
-        width: 100%;
-        margin: 0;
-    }
-
-    .containerHeader{
-        margin-left: 0;
-    }
-
-    .secLivros{
-        width: 80%;
-        flex-wrap: nowrap;
-        overflow:auto;
-
-        scrollbar-width: none;
-        scroll-behavior: smooth;
-    }
-
-    .livros div{
-        width:100%;
-        height: 90px;
-        position: static;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box{
-        height: 10px;
-    }
-
-    .livros div h4{
-        font-size: 12px;
-    }
-
-    .livros div p{
-        font-size: 10px;
-        margin: 0;
-        margin-bottom: 5px;
-    }
-
-    .livros div .containerInfo p{
-        font-size: 10px;
-    }
-
-    .livros div .containerInfo p:first-child{
-        font-size: 15px;
-        margin-right: 5px;
-    }
-
-    .livros div .addCarrinho,a{
-        height: 30px;
-        font-size: 9px;
-    }
-
-    .titulo{
-        margin-left: 10%;
-    }
-    .addCarrinho img{
-        width: 15px;
-    }
-
-    .preco + p{
-        display: none;
-    }
-    .addCarrinho{
-        display: none;
-    }
-
-    /*header{
-        display: none;
-    }*/
-
-    .containerMain #lanc{
-    margin-top: 60px;
-    }
-
-}
-
-@media screen and (max-width:768px) {
-        .secContato{
-        display: flex;
-        flex-direction: column;
-    }
-    .mensagem, .infoContato{
-        width: 100%;
-        margin: 10px 0 10px 0;
-        box-sizing: border-box;
-    }
-}
-
 /* MENU HAMBURGUER */
 
 #menuresp #logo{
     position: absolute;
-    z-index: 997;
+    z-index: 1;
     display: flex;
     left: 20%;
 }
@@ -591,37 +488,41 @@ form label{
     transition: 0.3s;
 }
 
+#menuresp .linkHome{
+    margin-bottom: 15px;
+}
+
 #menuresp nav{
     background-color: black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menumobile .menu-lines{
-    position:absolute;
-    z-index: 999;
-    width: 35px;
-    height: 35px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
 
+    margin: auto;
     margin-left: 30px;
 }
 
 .menumobile .menu-lines span{
     display:inline-block;
-    width: 35px;
-    height: 5px;
-    margin-bottom: 5px;
-    background-color: #cdcdcd;
+    width: 25px;
+    height: 3px;
+    margin: 3px 0px 3px 3px;
+    background-color: #fff;
     border-radius: 3px;
-    margin-left: 5px;
     transition: all ease .2s;
 }
 .menumobile .menu-faketrigger{
     display: inline-block;
     position:absolute;
-    z-index: 1000;
-    width: 36px;
-    height: 36px;
+    z-index: 4;
+    width: 30px;
+    height: 100%;
     opacity: 0;
     cursor: pointer;
     margin-left: 30px;
@@ -635,7 +536,7 @@ form label{
 .menumobile .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
    
     transform-origin: 0% 0%;
-    transform: rotate(45deg) scaleX(1.25);
+    transform: rotate(45deg) scaleX(1.1);
 
 }
 .menumobile .menu-faketrigger:checked ~ .menu-lines span:nth-child(2){
@@ -645,12 +546,12 @@ form label{
 .menumobile .menu-faketrigger:checked ~ .menu-lines span:nth-child(3){
    
     transform-origin: 0% 100%;
-    transform: rotate(-45deg) scaleX(1.25);
+    transform: rotate(-45deg) scaleX(1.1);
 
 }
 .menumobile ul{
     position: absolute;
-    z-index: 998;
+    z-index: 2;
     left: 0;
     top: 0;
    
@@ -691,11 +592,7 @@ form label{
 }
 
 
-@media screen and (min-width: 1024px){
-    #menuresp{
-        display: none;
-    }
-}
+
 
 /* --- RODAPÉ --- */
 
@@ -787,8 +684,112 @@ footer{
     font-size: 12px;
 }
 
-@media(max-width:768px){
 
+/* ---RESPONSIVIDADE--- */
+
+@media screen and (max-width:1024px){
+    #links a{
+        display: none;
+    }
+
+    .menulateral{
+        display: none;
+    }
+
+    .menu{
+        display: inline-block;
+    }
+
+    .containerMain{
+        width: 100%;
+        margin: 0;
+    }
+
+    .containerHeader{
+        margin-left: 0;
+    }
+
+    .secLivros{
+        width: 80%;
+        flex-wrap: nowrap;
+        overflow:auto;
+
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    .livros div{
+        width:100%;
+        height: 90px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        height: 10px;
+    }
+
+    .livros div h4{
+        font-size: 12px;
+    }
+
+    .livros div p{
+        font-size: 10px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .livros div .containerInfo p{
+        font-size: 10px;
+    }
+
+    .livros div .containerInfo p:first-child{
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+    .livros div .addCarrinho,a{
+        height: 30px;
+        font-size: 9px;
+    }
+
+    .titulo{
+        margin-left: 10%;
+    }
+    .addCarrinho img{
+        width: 15px;
+    }
+
+    .preco + p{
+        display: none;
+    }
+    .addCarrinho{
+        display: none;
+    }
+
+    .containerMain #lanc{
+    margin-top: 60px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    #menuresp{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+        .secContato{
+        display: flex;
+        flex-direction: column;
+    }
+    .mensagem, .infoContato{
+        width: 100%;
+        margin: 10px 0 10px 0;
+        box-sizing: border-box;
+    }
     footer{
         padding:40px 25px 20px;
     }
@@ -797,5 +798,6 @@ footer{
         flex-direction:column;
         gap:35px;
     }
-
 }
+
+
