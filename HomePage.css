@@ -454,6 +454,7 @@ form label{
     background-color: #6d1a2a;
     color: #ffffff;
     border-radius: 10px;
+    cursor: pointer;
 }
 #enviar img{
     width: 14px;

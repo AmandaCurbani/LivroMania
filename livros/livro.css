@@ -232,52 +232,6 @@ p{
 
 
 
-
-
-
-
-
-@media screen and (max-width:1024px){
-    .menulateral{
-        display: none;
-    }
-    section{
-        flex-direction: column;
-        align-items: center;
-    }
-    .compra{
-        flex-direction: row;
-        width: 90%;
-        justify-content:center;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    #contraCapa{
-        display: inline-block;
-    }
-    .compra span{
-        display: none;
-    }
-    .compra img{
-        width: 200px;
-        margin: 0 10px 10px;
-    }
-    .info{
-        width: 90%;
-    }
-    
-    #sinopse span{
-    display:flex;
-}
-}
-
-@media screen and (max-width:500px) {
-    .compra img{
-        width: 150px;
-    }
-    
-}
-
 /* --- RODAPÉ --- */
 
 footer{
@@ -367,6 +321,47 @@ footer{
     padding-top: 25px;
     text-align: center;
     font-size: 12px;
+}
+
+@media screen and (max-width:1024px){
+    .menulateral{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .compra{
+        flex-direction: row;
+        width: 90%;
+        justify-content:center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #contraCapa{
+        display: inline-block;
+    }
+    .compra span{
+        display: none;
+    }
+    .compra img{
+        width: 200px;
+        margin: 0 10px 10px;
+    }
+    .info{
+        width: 90%;
+    }
+    
+    #sinopse span{
+    display:flex;
+}
+}
+
+@media screen and (max-width:500px) {
+    .compra img{
+        width: 150px;
+    }
+    
 }
 
 @media(max-width:768px){
