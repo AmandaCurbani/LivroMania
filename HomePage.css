@@ -81,6 +81,10 @@ nav h1{
     width: 18%;
 }
 
+.logo{
+    display: flex;
+}
+
 .logo:hover{
     transform: scale(1.05);
     transition: 0.3s;
