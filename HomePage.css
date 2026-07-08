@@ -824,5 +824,20 @@ footer{
         width: auto;
     }
 }
+@media screen and (min-height: 1680px) {
+        .footer-container{
+        height: 33em;
+        box-sizing: border-box;
+    }
+    .footer-bottom{
+        height: 10em;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    .footer-bottom p{
+        text-align: center;
+    }
+}
+
 
 

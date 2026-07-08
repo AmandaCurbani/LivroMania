@@ -4,6 +4,12 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 10px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
 }
 
 nav{
@@ -238,7 +244,7 @@ footer{
     background: #6d1a2a;
     color: white;
     padding:45px 60px 20px;
-    margin-top: 40px;
+    margin-top: auto; 
 }
 
 .footer-container{
