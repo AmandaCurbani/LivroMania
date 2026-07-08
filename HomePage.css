@@ -43,6 +43,7 @@ nav{
     align-items: center;
     
 }
+
 .containerNav{
     width: 80%;
     display: flex;
@@ -58,12 +59,31 @@ nav{
     
 }
 
+.containerHeader{
+    width: 40%;
+}
+
 nav span img{
     width: 20px;
 }
 
 nav h1{
     font-size: 20px;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner img{
+    width: 18%;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 #ofertas{
@@ -798,6 +818,10 @@ footer{
     .footer-container{
         flex-direction:column;
         gap:35px;
+    }
+
+    .containerHeader{
+        width: auto;
     }
 }
 
