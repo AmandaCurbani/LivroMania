@@ -45,7 +45,7 @@ nav{
 }
 
 .containerNav{
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -363,9 +363,7 @@ aside{
     width: 20px;
     margin-right: 20px;
 }
-/* input[type="checkbox"]{
-    display:none;
-} */
+
 
 /* CONTATO */
 .contato{
@@ -799,7 +797,7 @@ footer{
 
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
     #menuresp{
         display: none;
     }

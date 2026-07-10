@@ -13,8 +13,6 @@ body {
     min-height: 100vh;
     height: 100%;
     margin: 0;
-
-
 }
 
 html {
@@ -67,32 +65,16 @@ nav {
 }
 
 .containerNav {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.containerNav a {
-    text-decoration: none;
-    color: white;
-}
-
-.containerHeader nav span {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    justify-content: space-around;
-
 }
 
 nav span img {
     width: 20px;
 }
 
-nav h1 {
-    font-size: 20px;
-}
 
 .icon {
     background-color: transparent;
@@ -104,26 +86,7 @@ nav h1 {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
 }
 
-#links {
-    display: flex;
-    align-items: center;
-
-    scroll-behavior: smooth;
-}
-
-#links a {
-    margin-left: 30px;
-    padding: 5px;
-    box-sizing: border-box;
-    color: white;
-    text-decoration: none;
-}
-
-#links a:hover {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
-}
-
-
+/* CADASTRO */
 
 #contForm {
     display: flex;
@@ -139,7 +102,7 @@ form {
 }
 
 .formulario {
-    margin: 20px 0; /**/
+    margin: 100px 0;
     background-color: rgb(255, 255, 255);
     width: 60%;
     padding: 20px;
@@ -356,7 +319,7 @@ textarea {
 
 
 
-/* --- RODAPÉ --- */
+/* RODAPÉ */
 
 footer {
     background: #6d1a2a;
@@ -454,37 +417,12 @@ footer {
 
 
 @media screen and (max-width:1024px) {
-    #links a {
-        display: none;
-    }
-
-    .menulateral {
-        display: none;
-    }
-
-    .menu {
-        display: inline-block;
-    }
-
-    .containerMain {
-        width: 100%;
-        margin: 0;
-    }
-
-    .containerHeader {
-        margin-left: 0;
-    }
-
     .formulario #envio {
         flex-direction: column;
     }
 
     .formulario #envio #conta {
         width: 70%;
-    }
-
-    .containerMain #lanc {
-        margin-top: 60px;
     }
 }
 
